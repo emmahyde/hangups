@@ -48,7 +48,7 @@ COL_SCHEMES = {
         ('msg_self', 'dark green', ''),
         ('msg_text', '', ''),
         ('status_line', 'standout', ''),
-        ('tab_background', 'black,standout,underline', 'light green'),
+        ('tab_background', 'black,standout', 'light green'),
     },
 }
 COL_SCHEME_NAMES = (
@@ -715,7 +715,7 @@ class ConversationWidget(urwid.WidgetWrap):
             ('weight', 1, self._list_box),
             ('pack', self._status_widget),
             ('pack', ReturnableEdit(self._on_return, keybindings,
-                                    caption='Send message: ')),
+                                    caption='')),
         ])
         # focus the edit widget by default
         self._widget.focus_position = 2

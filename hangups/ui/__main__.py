@@ -41,7 +41,7 @@ COL_SCHEMES = {
     },
     'solarized-dark': {
         ('active_tab', 'light gray', 'light blue'),
-        ('inactive_tab', 'underline', 'light green'),
+        ('inactive_tab', '', 'light green'),
         ('msg_date', 'dark cyan', ''),
         ('msg_sender', 'dark blue', ''),
         ('msg_text_self', '', ''),

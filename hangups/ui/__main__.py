@@ -487,7 +487,7 @@ class MessageWidget(urwid.WidgetWrap):
         if show_date:
             fmt += '\n'+datetimefmt.get('date', '')+'\n'
         fmt += datetimefmt.get('time', '')
-        return timestamp.astimezone(tz=None).strftime(fmt)
+        return timestamp.astimezone(tz=None).strftime('['+fmt+']')
 
     def __lt__(self, other):
         return self.timestamp < other.timestamp
